@@ -2,7 +2,7 @@ var path = require('path');
 
 module.exports = {
     mode: 'production',
-    entry: './src/index.jsx',
+    entry: './src/index.tsx',
     output: {
         path: path.resolve('lib'),
         filename: 'index.js',
@@ -11,7 +11,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.jsx?$/,
+                test: /\.tsx?$/,
                 exclude: /(node_modules)/,
                 use: 'babel-loader'
             },
